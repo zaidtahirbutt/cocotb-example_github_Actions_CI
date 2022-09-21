@@ -1,6 +1,6 @@
 # Cocotb + Icarus: Setup, Test, Learn
 
-testing push again  !
+testing push again!
 
 [Cocotb](https://github.com/cocotb/cocotb) is an open-source python-based alternative to SystemVerilog testbenches. Since python is a productive high-level language with a rich ecosystem of well-maintained libraries such as numpy, tensorflow and pytorch, using python for verification allows the direct usage of those libraries. Cocotb does not simulate the testbench itself. Instead, it interfaces with any of the following simulators:
 
