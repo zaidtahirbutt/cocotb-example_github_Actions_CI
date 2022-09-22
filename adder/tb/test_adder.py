@@ -69,7 +69,8 @@ async def adder_tb(dut):
         assert expectsum == computedsum, f"Failed on the {i}th cycle. Got {computedsum}, expected {expectsum}" # If any assertion fails, the test fails, and the string would be printed in console
         
         print(f"Driven value: {expectsum} \t received value: {computedsum}")
-        assert expectcarry == computedcarry, f"Failed on the {i}th cycle. Got {computedcarry}, expected {expectcarry}" # If any assertion fails, the test fails, and the string would be printed in console
+#         assert expectcarry == computedcarry, f"Failed on the {i}th cycle. Got {computedcarry}, expected {expectcarry}" # If any assertion fails, the test fails, and the string would be printed in console
+        assert expectcarry == 2, f"Failed on the {i}th cycle. Got {computedcarry}, expected {expectcarry}" # If any assertion fails, the test fails, and the string would be printed in console
         print(f"Driven value: {expectcarry} \t received value: {computedcarry}") 
 
 
