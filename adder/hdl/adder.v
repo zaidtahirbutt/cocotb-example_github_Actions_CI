@@ -21,6 +21,9 @@
 
 
 module adder_test
+  #(
+    parameter random_para = 1
+  )
   (
    clk,
    i_bit1,
