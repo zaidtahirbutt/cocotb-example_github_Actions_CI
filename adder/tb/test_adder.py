@@ -33,8 +33,12 @@ async def adder_tb(dut):
     ''' Clock Generation '''
     clock = Clock(dut.clk, 10, units="ns") # create a clock for dut.clk pin with 10 ns period
     cocotb.start_soon(clock.start()) # start clock in a seperate thread
-    in1 = {1,1,0,0}
-    in2 = {1,0,1,0}
+#     in1 = {1,1,0,0}
+#     in2 = {1,0,1,0}
+    
+    in1 = [1,1,0,0]
+    in2 = [1,0,1,0]
+    
     ''' Assign random values to input, wait for a clock and verify output '''
     for i in range(4): # 4 experiments
         
