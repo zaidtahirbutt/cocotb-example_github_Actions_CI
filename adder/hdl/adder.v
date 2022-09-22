@@ -22,12 +22,14 @@
 
 module adder_test
   (
+   clk,
    i_bit1,
    i_bit2,
    o_sum,
    o_carry
    );
- 
+  
+  input  clk;
   input  i_bit1;
   input  i_bit2;
   output o_sum;
