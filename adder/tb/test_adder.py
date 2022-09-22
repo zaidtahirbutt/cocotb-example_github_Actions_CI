@@ -76,8 +76,8 @@ import glob
 @pytest.mark.parametrize(
     # Two sets of parameters to test across
     "parameters", [
-        {"WIDTH_IN": "8", "WIDTH_OUT": "16"},
-        {"WIDTH_IN": "16"}
+#         {"WIDTH_IN": "8", "WIDTH_OUT": "16"},
+#         {"WIDTH_IN": "16"}
         ])
 def test_adder(parameters):
 
