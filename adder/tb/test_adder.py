@@ -88,7 +88,7 @@ import glob
     "parameters", [
 #         {"WIDTH_IN": "8", "WIDTH_OUT": "16"},
 #         {"WIDTH_IN": "16"}
-        {"random_para": "10"}
+#         {"random_para": "10"}
         ])
 def test_adder(parameters):
 
