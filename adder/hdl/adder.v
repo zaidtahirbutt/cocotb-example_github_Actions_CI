@@ -29,11 +29,11 @@ module adder_test
    o_carry
    );
   
-  input  clk;
-  input  i_bit1;
-  input  i_bit2;
-  output o_sum;
-  output o_carry;
+  input wire clk;
+  input wire i_bit1;
+  input wire i_bit2;
+  output wire o_sum;
+  output wire o_carry;
  
   assign o_sum   = i_bit1 ^ i_bit2;  // bitwise xor
   assign o_carry = i_bit1 & i_bit2;  // bitwise and
