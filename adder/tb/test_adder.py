@@ -61,7 +61,7 @@ async def adder_tb(dut):
         
 #         computedsum = dut.o_sum.value.integer # Read pins as unsigned integer.
 #         computedcarry = dut.o_carry.value.integer # Read pins as signed integer.
-        
+        x = 0
         computedsum = dut.o_sum.value
         computedcarry = dut.o_carry.value
             
@@ -70,7 +70,7 @@ async def adder_tb(dut):
         
         print(f"Driven value: {expectsum} \t received value: {computedsum}")
 #         assert expectcarry == computedcarry, f"Failed on the {i}th cycle. Got {computedcarry}, expected {expectcarry}" # If any assertion fails, the test fails, and the string would be printed in console
-        assert 1 == computedcarry, f"Failed on the {i}th cycle. Got {computedcarry}, expected {expectcarry}" # If any assertion fails, the test fails, and the string would be printed in console
+        assert x == computedcarry, f"Failed on the {i}th cycle. Got {computedcarry}, expected {expectcarry}" # If any assertion fails, the test fails, and the string would be printed in console
         print(f"Driven value: {expectcarry} \t received value: {computedcarry}") 
 
 
