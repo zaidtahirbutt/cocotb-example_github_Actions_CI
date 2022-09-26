@@ -48,7 +48,7 @@ async def register_tb(dut):
         x = 0
         
         assert exact == computed, f"Failed on the {i}th cycle. Got {computed}, expected {exact}" # If any assertion fails, the test fails, and the string would be printed in console
-        assert x == computed, f"Random injected asserrtion fail, Failed on the {i}th cycle. Got {computed}, expected {x}" # If any assertion fails, the test fails, and the string would be printed in console
+#         assert x == computed, f"Random injected asserrtion fail, Failed on the {i}th cycle. Got {computed}, expected {x}" # If any assertion fails, the test fails, and the string would be printed in console
         print(f"Driven value: {exact} \t received value: {computed}") 
 
 
